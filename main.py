@@ -52,7 +52,7 @@ class LinuxDoBrowser:
         if not self.login():
             return
         self.click_topic()
-        self.print_connect_info()
+        # self.print_connect_info()
 
     def click_like(self, page):
         page.locator(".discourse-reactions-reaction-button").first.click()
